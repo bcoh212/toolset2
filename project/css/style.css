@@ -1,0 +1,2142 @@
+/* ************** common ************** */
+:root {
+    --main-color : #388E3C;
+    --point-color : #F57C00;
+    --text-color : #333;
+    --sub-text-color : #555;
+}
+
+.wrapper {
+    padding-top: 9rem;
+}
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title-area .en, .title-area .ko {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.title-area h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.title-area p {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 1.7;
+    font-weight: 300;
+    color: var(--sub-text-color);
+    margin-top: 1.2rem;
+}
+.contact-btn{
+    margin-top: 6rem;
+}
+.contact-btn a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.8rem 8.5rem;
+    border: 2px solid #388E3C;
+    border-radius: 10rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #388E3C;
+    width: fit-content;
+}
+.contact-btn a i {
+    display: flex;
+    align-items: center;
+    width: 2.6rem;
+}
+.swiper-pagination {
+    bottom: 3rem;
+}
+.swiper-pagination span {
+    background-color: #388E3C;
+    opacity: 0.4;
+}
+.swiper-pagination span.swiper-pagination-bullet-active {
+    width: 2.4rem;
+    opacity: 1;
+    border-radius: 2rem;
+}
+
+
+/* ************** header ************** */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+header .header-inner {
+    position: relative;
+    height: 9rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header .header-logo a {
+    display: flex;
+    align-items: center;
+    width: 16.8rem;;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header nav ul {
+    display: flex;
+    gap: 4.8rem;
+}
+header nav ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+}
+header nav ul li.active a {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+/* ************** footer ************** */
+footer {
+    padding: 4rem 0;
+    background-color: #1B1B1B;
+}
+footer .f-logo {
+    width: 13.4rem;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+footer .f-info ul{
+    margin-bottom: 4rem;
+}
+footer .f-info ul li{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+footer .f-info ul li:nth-child(2){
+    margin-top: 0.6rem;
+}
+footer .f-info ul li p {
+    font-size: 1.4rem;
+    color:#efefef;
+    font-weight: 300;
+}
+footer .copy {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* ************** main ************** */
+/* hero */
+section.hero {
+    padding: 10rem 0 6rem;
+    text-align: center;
+}
+section.hero p {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1.9;
+    /* border-right: 3px solid var(--main-color);  */
+}
+
+section.hero p strong {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+
+/* text */
+section.text.flex{
+    padding: 9rem 0 18rem;
+}
+section.text.flex .inner{
+    display: flex;
+    justify-content: space-between;
+}
+section.text.flex h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+section.text.flex p {
+    font-size: 2.4rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--sub-text-color);
+}
+section.text.flex p:last-child {
+    margin-top: 6rem;
+}
+
+/* img banner */
+.imb-banner img.mo {
+    display: none;
+}
+
+
+/* recycle-effect */
+section.recycle-effect {
+    padding: 8rem 0 18rem;
+}
+
+section.recycle-effect .title-area {
+    text-align: center;
+    margin-bottom: 9rem;
+}
+section.recycle-effect .bottom-box-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+section.recycle-effect .bottom-box-wrapper > div {
+    width: calc(100% / 3 - 13.3333px);
+}
+section.recycle-effect .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+section.recycle-effect .box  .inner-item {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-bottom: 2.4rem;
+
+}
+section.recycle-effect .box  .inner-item  i {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+}
+section.recycle-effect .box  .inner-item  span {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+section.recycle-effect .box  .inner-item  strong {
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+    line-height: 1.2;
+}
+section.recycle-effect .box  .inner-item  strong em {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--main-color);
+    padding-left: 0.6rem;
+}
+section.recycle-effect .box  .inner-item + p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+/* history */
+section.history.flex {
+    padding: 8rem 0 18rem;
+}
+section.history.flex .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.history.flex  .title-area {
+    position: sticky;
+    top: 132px;
+    height: 100%;
+
+}
+section.history.flex .right-history-list {
+    width: 710px;
+    border-top : 2px solid var(--text-color);
+}
+section.history.flex .right-history-list > ul > li{
+    display: flex;
+    padding:4rem 0;
+    gap: 10rem;
+    border-bottom: 1px solid #CBCBCB;
+}
+section.history.flex .right-history-list ul > li strong {
+    display: block;
+    width: 132px;
+    font-size: 4.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+section.history.flex .right-history-list ul > li strong.active {
+    color: var(--main-color);
+}
+section.history.flex .right-history-list ul > li ul li {
+    display: flex;
+    gap: 3rem;
+}
+section.history.flex .right-history-list ul > li ul li:nth-child(n+2){
+    margin-top: 2.4rem;
+}
+section.history.flex .right-history-list ul > li ul li span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 3.2rem;
+    display: block;
+}
+
+
+
+/* solution-banner */
+section.solution-banner.flex {
+    padding: 12rem 0;
+    background-color: #FAFAFA;
+}
+section.solution-banner .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+section.solution-banner .left-box {
+    position: relative;
+    z-index: 1;
+}
+section.solution-banner .left-box .title h3{
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 2.4rem;
+}
+section.solution-banner .left-box .title p {
+    display: block;
+    margin-bottom:6rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+    line-height: 1.7;
+}
+section.solution-banner .left-box .title p b {
+    color: var(--point-color);
+    font-weight: 600;
+}
+section.solution-banner .left-box ul {
+    display: flex;
+    gap:4rem ;
+}
+section.solution-banner .left-box ul li {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+}
+section.solution-banner .left-box ul li i {
+    width: 12rem;
+}
+section.solution-banner .left-box ul li span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+section.solution-banner .right-img {
+width: 60rem;
+}
+
+
+/* chart-wrapper */
+section.chart-wrapper {
+    padding: 18rem 0;
+}
+section.chart-wrapper .inner {
+    display: flex;
+    align-items: flex-start;
+}
+section.chart-wrapper .inner .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 50%;
+}
+
+section.chart-wrapper .inner .box i {
+    height: 37.8rem;
+    order: 1;
+}
+section.chart-wrapper .inner .box i img {
+    height: 100%;
+}
+section.chart-wrapper .inner .box .text-box {
+    text-align: center;
+    order: 2;
+}
+section.chart-wrapper .inner .box .text-box  strong {
+    font-size: 3.2rem;   
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+section.chart-wrapper .inner .box .text-box  p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+    line-height: 1.7;
+}
+
+
+/* banner */
+.banner-wrapper {
+    background: url('../images/bottom-banner-bg.png') no-repeat 50% 50% / cover;
+    padding: 14rem 0;
+    text-align: center;
+}
+.banner-wrapper h3 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+/* quality-problem */
+section.quality-problem {
+    padding: 18rem 0;
+}
+section.quality-problem .title-area {
+    margin-bottom: 9rem;
+    text-align: center;
+}
+section.quality-problem  .table-box h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+}
+section.quality-problem  .table-box table {
+    border-top: 2px solid #333;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+section.quality-problem  .table-box table tr {
+    border-bottom: 1px solid #CBCBCB;
+}
+section.quality-problem  .table-box table tr th {
+    width: 22rem;
+    padding: 1.6rem 0;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+section.quality-problem  .table-box table tr td {
+    padding: 1.6rem 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+section.quality-problem  .table-box .img-list {
+    display: flex;
+    gap: 2rem;
+}
+section.quality-problem  .table-box .img-list li {
+    width: calc(100% / 3 - 13.3333px);
+    text-align: center;
+}
+section.quality-problem  .table-box .img-list li i {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.6rem;
+    background-color: rgba(164,195,162,0.16);
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22rem;
+    margin-bottom: 2.4rem;
+}
+section.quality-problem  .table-box .img-list li:nth-child(1) img {
+    width: 11rem;
+} 
+section.quality-problem  .table-box .img-list li:nth-child(2) img {
+    width: 8.4rem;
+} 
+section.quality-problem  .table-box .img-list li:nth-child(3) img {
+    width: 7.8rem;
+} 
+section.quality-problem  .table-box .img-list li span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+section.quality-problem  .table-box.table2 {
+    margin-top: 12rem;
+}
+
+section.quality-problem  .maintenance-list {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+section.quality-problem  .maintenance-list li {
+    width: calc(100% / 6 - 13.3333px);
+    background: rgba(164,195,162,0.16);
+    border-radius: 0.6rem;
+    padding: 2.4rem;
+    text-align: center;
+}
+section.quality-problem  .maintenance-list li i {
+    width: 10rem;
+    margin: 0 auto 4rem;
+    display : block;
+}
+section.quality-problem  .maintenance-list span {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+section.quality-problem  .maintenance-list p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--sub-text-color);
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+
+
+/* service-problem */
+section.service-problem {
+    padding: 18rem 0;
+    background: linear-gradient(to bottom, 
+    rgba(164,195,162,0) 0%,            
+    rgba(164,195,162,0.16) 100%  
+    );
+}
+section.service-problem .inner {
+    display: flex;
+    justify-content: space-between;
+}
+section.service-problem .right-box{
+    width: calc(100% - 400px);
+}
+section.service-problem .right-box ul{
+    display: flex;
+    padding: 5rem 4rem;
+    gap: 6rem;
+    text-align: center;
+}
+section.service-problem .right-box ul li{
+    width: calc(100% / 5 - 13.3333px);
+}
+section.service-problem .right-box ul li i{
+    width: 14rem;
+    margin: 0 auto 2.4rem;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+section.service-problem .right-box ul li p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+section.service-problem .right-box ul li p b {
+    display: block;
+    font-weight: 600;
+}
+
+
+/* news */
+section.news-wrapper {
+    padding: 18rem 0 7.2rem;
+    position: relative;
+}
+section.news-wrapper .title-area {
+    max-width: 1440px;
+    margin: 0 auto 4rem;
+}
+.news-swiper-wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.news-swiper-wrap .swiper-slide a {
+    display: block;
+    background-color: #fafafa;
+    border-radius: 1.2rem;
+    padding: 4rem 2rem;
+    min-height: 22rem;
+    cursor: pointer;
+}
+.news-wrapper .swiper-slide a .label {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(164,195,162,0.4);
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1.2rem;
+}
+.news-wrapper .swiper-slide a h5 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news-wrapper .swiper-slide a p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--sub-text-color);
+    line-height: 1.7;
+    word-break: keep-all;
+    height: 10rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+}
+
+
+/* youtube */
+section.youtube-wrapper {
+    position: relative;
+    padding: 18rem 0 7.2rem;
+    overflow: hidden;
+}
+section.youtube-wrapper .title-area{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto 4rem;
+    gap: 1.2rem;
+}
+section.youtube-wrapper .title-area i {
+    display: flex;
+    align-items: center;
+    width: 6rem;
+}
+section.youtube-wrapper .title-area h2 {
+    text-transform:uppercase;
+}
+.youtube-swiper-wrap {
+    margin: 0 -2%;
+}
+.youtube-swiper-wrap .swiper-slide{
+    cursor: pointer !important;
+    width: 100%;
+    height: 100%;
+}
+.youtube-swiper-wrap .swiper-slide a {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.youtube-swiper-wrap .swiper-slide a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1.2rem;
+    transition: all 0.3s ease;
+    display: block;
+}
+.youtube-swiper-wrap .swiper-slide.swiper-slide-active a::after {
+    opacity: 0;
+    display: none;
+}
+.youtube-swiper-wrap .swiper-slide.swiper-slide-active a {
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* service */
+section.service-wrapper {
+    padding: 18rem 0;
+    background: linear-gradient(to bottom, 
+    rgba(164,195,162,0) 0%,            
+    rgba(164,195,162,0.16) 100%  
+    );
+}
+section.service-wrapper .inner .title-area {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.service-wrapper .inner .title-area strong {
+    color: var(--main-color);
+}
+section.service-wrapper .inner i {
+    max-width: 984px;
+    margin: 0 auto;
+    display: flex;
+
+}
+section.service-wrapper .inner i.mo{
+    display: none;
+}
+section.service-wrapper .inner i.pc{
+    display: block;
+}
+section.service-wrapper .inner .contact-btn.green-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.service-wrapper .inner .contact-btn.green-bg a {
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    background: linear-gradient(45deg, 
+    #1E5631 0%,            
+    #388E3C 100%  
+    );
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+section.service-wrapper .inner .contact-btn.green-bg a i {
+    width: 3.2rem;
+}
+
+/* banner2 */
+.banner2-wrapper {
+    padding: 8rem 0;
+    background: url('../images/banner-bg2.png') no-repeat 50% 50% / cover;
+}
+.banner2-wrapper .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.banner2-wrapper .inner i.acc {
+    display: flex;
+    align-items: center;
+    width: 4.6rem;
+}
+.banner2-wrapper .inner p {
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 400;
+
+}
+.banner2-wrapper .inner p span {
+    position: relative;
+    display: inline-block;
+    color: var(--main-color);
+    font-weight: 600;
+    z-index: 1;
+}
+.banner2-wrapper .inner p span::after{
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 1.8rem;
+    opacity: 16%;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+.banner2-wrapper .inner p:last-child {
+    margin-top: 4rem;
+}
+
+
+/* review */
+section.review-wrapper {
+    padding: 18rem 0;
+}
+section.review-wrapper .inner .title-area {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.review-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1195px;
+    margin: 0 auto;
+}
+section.review-wrapper ul li {
+    display: flex;
+    align-items: flex-end;
+    gap: 4rem;
+}
+section.review-wrapper ul li i {
+    display: flex;
+    width: 18rem;
+}
+section.review-wrapper ul li .review-box {
+    width: calc(100% - 22rem);
+    padding: 4rem;
+}
+section.review-wrapper ul li:nth-child(even) .review-box {
+    background-color: #fafafa;
+    border-radius: 4rem 4rem 0 4rem;
+}
+section.review-wrapper ul li:nth-child(odd) .review-box {
+    background-color: rgba(164,195,162,0.16);
+    border-radius: 4rem 4rem 4rem 0;
+}
+section.review-wrapper ul li .review-box p:first-child {
+    display: flex;
+    align-items: center;
+}
+section.review-wrapper ul li .review-box p .star{
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
+    background: url('../images/star-ico.png') no-repeat 50% 50% / cover;
+    margin-right: 0.6rem;
+}
+section.review-wrapper ul li .review-box p .star + span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+section.review-wrapper ul li .review-box .profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.8rem;
+}
+section.review-wrapper ul li .review-box .profile p:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+section.review-wrapper ul li .review-box .profile p:last-child span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #888;
+    display: block;
+    position: relative;
+}
+section.review-wrapper ul li .review-box p:last-child span:nth-child(n+2)::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.6rem;
+    width: 0.12rem;
+    height: 1.4rem;
+    background-color: #888;
+    transform: translateY(-50%);
+}
+section.review-wrapper ul li .review-box > p:last-child {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+section.review-wrapper ul li .review-box > p:last-child b {
+    font-weight: 700;
+}
+
+
+/* proposal */
+section.proposal-wrapper {
+    padding: 18rem 0;
+    background-color: #fafafa;
+}
+section.proposal-wrapper .inner {
+    display: flex;
+    justify-content: space-between;
+}
+section.proposal-wrapper .title-area {
+    position: sticky;
+    top: 132px;
+    height: 100%;
+}
+section.proposal-wrapper .proposal-list {
+    width: 71rem;
+}
+section.proposal-wrapper .proposal-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+section.proposal-wrapper .proposal-list ul i {
+    display: block;
+    margin-bottom: 4rem;
+}
+section.proposal-wrapper .proposal-list ul .label {
+    display: inline-block;
+    padding: 0.6rem 2.4rem;
+    background: #388E3C;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+section.proposal-wrapper .proposal-list ul .text-box p {
+    font-size: 2rem;
+    line-height: 1.7;
+}
+section.proposal-wrapper .proposal-list ul .text-box p b {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+
+
+/* client */
+section.client-wrapper {
+    padding: 18rem 0;
+}
+section.client-wrapper .title-area {
+    text-align: center;
+    margin-bottom: 9rem;
+}
+section.client-wrapper i.mo {
+    display: none;
+}
+
+
+
+
+/* -------------------- media -------------------- */
+@media (max-width: 1450px){
+    header .header-inner{padding: 0 4rem;}
+
+    section.quality-problem, section.service-problem, section.service-wrapper, section.review-wrapper, section.proposal-wrapper, section.client-wrapper{
+        padding: 16rem 0;
+    }
+
+    .inner {
+        padding: 0 4rem;
+    }
+
+    .title-area .en, .title-area .ko{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+    .title-area h2{
+        font-size: 3.6rem;
+    }
+    .title-area p{
+        font-size: 2rem;
+        margin-top: 0.6rem;
+    }
+
+
+    section.hero{
+        padding: 10rem 0 4rem;
+    }
+    section.hero p{
+        font-size: 2.8rem;
+    }
+
+    section.text.flex{
+        padding: 8rem 0 16rem;
+    }
+    section.text.flex h2 {
+        font-size: 3.6rem;
+    }
+    section.text.flex p{
+        font-size: 2.2rem;
+    }
+
+    section.recycle-effect .title-area{
+        margin-bottom: 6rem;
+    }
+    section.recycle-effect .box .inner-item span{
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    section.recycle-effect .box .inner-item strong{
+        font-size: 4.2rem;
+    }
+    section.recycle-effect .box .inner-item strong em{
+        font-size: 1.6rem;
+    }
+    section.recycle-effect .box .inner-item + p{
+        font-size: 1.6rem;
+    }
+
+    section.history.flex .right-history-list > ul > li{
+        padding: 3rem 0;
+        gap: 6rem;
+    }
+    section.history.flex .right-history-list ul > li strong {
+        font-size: 3.2rem;
+        width: 10rem;
+    }
+
+
+    section.solution-banner .left-box .title h3{
+        font-size: 3.6rem;
+    }
+    section.solution-banner .left-box .title p{
+        font-size: 2rem;
+    }
+    section.solution-banner .right-img{
+        width: 52rem;
+    }
+    section.solution-banner .left-box ul li i{
+        width: 10rem;
+    }
+
+    section.chart-wrapper{padding: 16rem 0;}
+    section.chart-wrapper .inner .box .text-box strong{
+        font-size: 2.6rem;
+    }
+    section.chart-wrapper .inner .box .text-box p{
+        font-size: 2rem;
+    }
+
+    .banner-wrapper{
+        padding: 12rem 0;
+    }
+    .banner-wrapper h3{
+        font-size: 3.6rem;
+    }
+
+
+    section.quality-problem .table-box h4{
+        font-size: 2rem;
+    }
+    section.quality-problem .table-box table tr th{
+        font-size: 1.8rem;
+    }
+    section.quality-problem .table-box table tr td{
+        font-size: 1.6rem;
+    }
+
+    section.quality-problem .table-box .img-list li span{
+        font-size: 1.8rem;
+    }
+
+    section.quality-problem .maintenance-list span{
+        font-size: 2rem;
+    }
+    section.quality-problem .maintenance-list p{
+        font-size: 1.4rem;
+    }
+
+
+    section.service-problem .right-box ul{
+        padding: 3rem 2rem;
+        gap: 4rem;
+    }
+    section.service-problem .right-box ul li i {
+        width: 100%;
+    }
+    section.service-problem .right-box ul li p{
+        font-size: 2rem;
+    }
+
+    section.news-wrapper{
+        padding: 16rem 0 7rem;
+    }
+    section.news-wrapper .title-area{
+        padding: 0 4rem;
+    }
+    .news-swiper-wrap{
+        padding: 0 0 0 4rem;
+    }
+
+    section.youtube-wrapper{
+        padding: 16rem 0 7rem;
+    }
+    section.youtube-wrapper .title-area{
+        padding: 0 4rem;
+    }
+    section.youtube-wrapper .title-area i{
+        width: 5.2rem;
+    }
+
+
+    .banner2-wrapper .inner i.acc{
+        width: 3.8rem;
+    }
+    .banner2-wrapper .inner p{
+        font-size: 2.6rem;
+    }
+
+    section.proposal-wrapper .proposal-list{
+        width: 60rem;
+    }
+    section.proposal-wrapper .proposal-list ul .label{
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    
+}
+@media (min-width: 1024px) and (max-width: 1459px) {
+    .title-area .en, .title-area .ko{
+        font-size: 1.8rem;
+    }
+    .title-area h2{
+        font-size: 3rem;
+    }
+    .title-area p{
+        font-size: 1.6rem;
+    }
+    .contact-btn a{
+        font-size: 1.6rem;
+        padding: 1rem 6rem;
+    }
+    .contact-btn a i {
+        width: 2.2rem;
+    }
+    header .header-logo a{
+        width: 14rem;
+    }
+    header nav ul li a{
+        font-size: 1.8rem;
+    }
+    section.quality-problem, section.service-problem, section.service-wrapper, section.review-wrapper, section.proposal-wrapper, section.client-wrapper{padding: 14rem 0;}
+    section.hero{
+        padding: 6rem 0;
+    }
+
+    section.hero p{
+        font-size: 2.6rem;
+    }
+
+    section.text.flex{
+        padding: 8rem 0 14rem;
+    }
+
+    section.text.flex h2{
+        font-size: 3rem;
+    }
+    section.text.flex p{
+        font-size: 1.8rem;
+    }
+
+    section.recycle-effect{
+        padding: 8rem 0 14rem;
+    }
+    section.recycle-effect .title-area{
+        margin-bottom: 5rem;
+    }
+    section.recycle-effect .box .inner-item{
+        padding: 5rem 0;
+    }
+    section.recycle-effect .box .inner-item i{
+        width: 7.2rem;
+    }
+    section.recycle-effect .box .inner-item span{
+        font-size: 1.8rem;
+    }
+    section.recycle-effect .box .inner-item strong{
+        font-size: 3.2rem;
+    }
+    section.recycle-effect .box .inner-item strong em{
+        font-size: 1.4rem;
+    }
+    section.recycle-effect .box .inner-item + p{
+        font-size: 1.4rem;
+    }
+
+    section.history.flex{
+        padding: 8rem 0 14rem;
+    }
+    section.history.flex .right-history-list{
+        width: 50rem;
+    }
+    section.history.flex .right-history-list > ul > li{
+        padding: 2.4rem 0;
+        gap: 4rem;
+    }
+    section.history.flex .right-history-list ul > li strong{
+        line-height: 1;
+        font-size: 2.8rem;
+    }
+    section.history.flex .right-history-list ul > li ul li{
+        gap: 2.4rem;
+    }
+    section.history.flex .right-history-list ul > li ul li span, section.history.flex .right-history-list ul > li ul li p{
+        font-size: 1.5rem;
+    }
+
+    section.solution-banner.flex{
+        padding: 8rem 0;
+    }
+    section.solution-banner .left-box{
+        width: calc(100% - 42rem);
+    }
+    section.solution-banner .left-box .title h3{
+        font-size: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    section.solution-banner .left-box .title p{
+        font-size: 1.6rem;
+        word-break: keep-all;
+        margin-bottom: 4rem;
+    }
+    section.solution-banner .left-box .title p br {
+        display: none;
+    }
+    section.solution-banner .right-img{width: 42rem;}
+    section.solution-banner .left-box ul li i{
+        width: 7.2rem;
+    }
+    section.solution-banner .left-box ul li span{
+        font-size: 1.6rem;
+    }
+    section.chart-wrapper{
+        padding: 14rem 0;
+    }
+    section.chart-wrapper .inner .box i{
+        height: 28vw;
+    }
+
+
+    .banner-wrapper{
+        padding: 10rem 0;
+    }
+    .banner-wrapper h3{
+        font-size: 3rem;
+    }
+
+    section.quality-problem .title-area{
+        margin-bottom: 6rem;
+    }
+    section.quality-problem .table-box h4{
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+    section.quality-problem .table-box table{
+        margin-bottom: 4rem;
+    }
+    section.quality-problem .table-box table tr th{
+        font-size: 1.6rem;
+        width: 18rem;
+    }
+
+    section.quality-problem .table-box .img-list li i{
+        height: 16rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(1) img{
+        width: 8rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(2) img{
+        width: 5.4rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(3) img{
+        width: 4.8rem;
+    }
+    section.quality-problem .table-box .img-list li span{
+        font-size: 1.6rem;
+    }
+
+    section.quality-problem .table-box.table2{
+        margin-top: 9rem;
+    }
+
+    section.quality-problem .maintenance-list{
+        gap: 1.2rem;
+    }
+    section.quality-problem .maintenance-list li{
+        padding: 2.4rem 1.2rem;
+        flex: 1;
+    }
+    section.quality-problem .maintenance-list li i{
+        width: 80%;
+        margin-bottom: 2.4rem;
+    }
+    section.quality-problem .maintenance-list span{
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+    section.service-problem .right-box{
+        width: calc(100% - 30rem);
+    }
+    section.service-problem .right-box ul li i{
+        margin-bottom: 1.6rem;
+    }
+    section.service-problem .right-box ul li p{
+        font-size: 1.8rem;
+    }
+
+    section.news-wrapper, section.youtube-wrapper{
+        padding: 14rem 0 6rem;
+    }
+    .news-wrapper .swiper-slide a .label{
+        font-size: 1.2rem;
+    }
+    .news-wrapper .swiper-slide a h5{
+        font-size: 1.8rem;
+    }
+    .news-wrapper .swiper-slide a p{
+        font-size: 1.4rem;
+        height: 9rem;
+    }
+    .news-swiper-wrap .swiper-slide a{
+        min-height: 18rem;
+    }
+
+    section.youtube-wrapper .title-area i{
+        width: 4.2rem;
+    }
+
+    section.service-wrapper .inner .title-area{
+        margin-bottom: 4rem;
+    }
+    section.service-wrapper .inner i{
+        width: 88%;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a{
+        font-size: 2.2rem;
+        padding: 1.6rem 10rem;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a i {
+        width: 2.6rem;
+    }
+
+
+    .banner2-wrapper .inner{
+        gap: 3rem;
+    }
+    .banner2-wrapper .inner i.acc{
+        width: 2.8rem;
+    }
+    .banner2-wrapper .inner p{
+        font-size: 2.2rem;
+    }
+
+    section.review-wrapper ul li i{
+        width: 16rem;
+    }
+    section.review-wrapper ul li .review-box{
+        width: calc(100% - 20rem);
+    }
+    section.review-wrapper ul li .review-box .profile{
+        gap: 1.6rem;
+    }
+    section.review-wrapper ul li .review-box p .star{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    section.review-wrapper ul li .review-box p .star + span{
+        font-size: 1.5rem;
+    }
+    section.review-wrapper ul li .review-box .profile p:last-child span{
+        font-size: 1.5rem;
+    }
+    section.review-wrapper ul li .review-box p:last-child span:nth-child(n+2)::before{
+        height: 1rem;
+    }
+    section.review-wrapper ul li .review-box > p:last-child{
+        font-size: 1.4rem;
+        word-break: keep-all;
+    }
+    section.review-wrapper ul li .review-box > p:last-child br {
+        display: none;
+    }
+
+    section.proposal-wrapper .proposal-list{
+        width: 46rem;
+    }
+    section.proposal-wrapper .proposal-list ul{
+        gap: 9rem;
+    }
+    section.proposal-wrapper .proposal-list ul i{
+        margin-bottom: 2.4rem;
+    }
+    section.proposal-wrapper .proposal-list ul .label{
+        font-size: 1.6rem;
+        padding: 0.4rem 2rem;
+    }
+    section.proposal-wrapper .proposal-list ul .text-box p{
+        font-size: 1.6rem;
+        word-break: keep-all;
+    }
+
+    section.client-wrapper .title-area{
+        margin-bottom: 6rem;
+    }
+
+    footer .f-logo{
+        width: 10rem;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .inner{padding: 0 3rem;}
+    header .header-inner{
+        padding: 0 3rem;
+    }
+    header .header-logo a{
+        width: 10rem;
+    }
+    header nav{
+        right: 3rem;
+        left: inherit;
+        transform: translateY(-50%);
+    }
+    header nav ul{
+        gap: 3rem;
+    }
+    header nav ul li a{
+        font-size: 1.6rem;
+    }
+
+
+    .title-area .en, .title-area .ko{
+        font-size: 1.6rem;
+    }
+    .title-area h2{
+        font-size: 2.6rem;
+    }
+    .title-area p{
+        font-size: 1.5rem;
+    }
+
+    section.quality-problem, section.service-problem, section.service-wrapper, section.review-wrapper, section.proposal-wrapper, section.client-wrapper{padding: 12rem 0;}
+    section.hero{
+        padding: 6rem 0;
+    }
+
+    section.hero p{
+        font-size: 2.2rem;
+        word-break: keep-all;
+    }
+
+
+    section.text.flex{
+        padding: 4rem 0 12rem;
+    }
+    section.text.flex .inner{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    section.text.flex h2{
+        font-size: 2.4rem;
+    }
+    section.text.flex p{
+        font-size: 1.6rem;
+        text-align: right;
+    }
+    section.text.flex p:last-child{
+        margin-top: 2rem;
+    }
+
+    section.recycle-effect{
+        padding: 6rem 0 12rem;
+    }
+    section.recycle-effect .title-area{
+        margin-bottom: 4rem;
+    }
+    section.recycle-effect .box .inner-item{
+        padding: 4rem 0;
+    }
+    section.recycle-effect .box .inner-item i{
+        width: 6.2rem;
+    }
+    section.recycle-effect .box .inner-item span{
+        font-size: 1.4rem;
+    }
+    section.recycle-effect .box .inner-item strong{
+        font-size: 2.4rem;
+    }
+    section.recycle-effect .box .inner-item strong em{
+        font-size: 1.2rem;
+        display: block;
+        padding-top: 0.6rem;
+    }
+    section.recycle-effect .box .inner-item + p{
+        font-size: 1.2rem;
+        word-break: keep-all;
+    }
+
+    section.history.flex{
+        padding: 6rem 0 12rem;
+    }
+    section.history.flex .inner{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    section.history.flex .right-history-list{
+        width: 100%;
+    }
+    section.history.flex .title-area{
+        position: relative;
+        top: 0;
+    }
+    section.history.flex .right-history-list > ul > li{
+        padding: 2rem 0;
+        gap: 3rem;
+    }
+    section.history.flex .right-history-list ul > li strong{
+        line-height: 1;
+        font-size: 2.6rem;
+    }
+    section.history.flex .right-history-list ul > li ul li{
+        gap: 2rem;
+    }
+    section.history.flex .right-history-list ul > li ul li span, section.history.flex .right-history-list ul > li ul li p{
+        font-size: 1.5rem;
+    }
+
+    section.solution-banner.flex{
+        padding: 8rem 0;
+    }
+    section.solution-banner .inner{
+        flex-direction: column;
+    }
+    section.solution-banner .left-box{
+        width: 100%;
+    }
+    section.solution-banner .left-box .title h3{
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+    section.solution-banner .left-box .title p{
+        font-size: 1.5rem;
+        word-break: keep-all;
+        margin-bottom: 4rem;
+    }
+    section.solution-banner .right-img{width: 42rem;}
+    section.solution-banner .left-box ul li i{
+        width: 6.2rem;
+    }
+    section.solution-banner .left-box ul li span{
+        font-size: 1.5rem;
+    }
+    section.solution-banner .right-img{
+        width: 32rem;
+        margin-top: -5rem;
+    }
+    section.chart-wrapper{
+        padding: 12rem 0;
+    }
+    section.chart-wrapper .inner{
+        flex-direction: column;
+        gap: 6rem;
+    }
+    section.chart-wrapper .inner .box{
+        gap: 3rem;
+        width: 100%;
+    }
+    section.chart-wrapper .inner .box i{
+        height: auto;
+        width: 80%;
+    }
+    section.chart-wrapper .inner .box .text-box{
+        width: 100%;
+    }
+    section.chart-wrapper .inner .box .text-box strong{
+        font-size: 2rem;
+    }
+    section.chart-wrapper .inner .box .text-box p{
+        font-size: 1.6rem;
+    }
+
+    .banner-wrapper{
+        padding: 8rem 0;
+    }
+    .banner-wrapper h3{
+        font-size: 2.4rem;
+    }
+
+    section.quality-problem .title-area{
+        margin-bottom: 6rem;
+    }
+    section.quality-problem .table-box h4{
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+    }
+    section.quality-problem .table-box table{
+        margin-bottom: 4rem;
+    }
+    section.quality-problem .table-box table tr th{
+        font-size: 1.5rem;
+        width: 14rem;
+    }
+    section.quality-problem .table-box table tr td{
+        font-size: 1.5rem;
+    }
+
+    section.quality-problem .table-box .img-list{
+        gap: 1.2rem;
+    }
+    section.quality-problem .table-box .img-list li{
+        flex: 1;
+    }
+    section.quality-problem .table-box .img-list li i{
+        height: 12rem;
+        margin-bottom: 1.2rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(1) img{
+        width: 6rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(2) img{
+        width: 4.4rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(3) img{
+        width: 3.8rem;
+    }
+    section.quality-problem .table-box .img-list li span{
+        font-size: 1.5rem;
+    }
+
+    section.quality-problem .table-box.table2{
+        margin-top: 8rem;
+    }
+
+    section.quality-problem .maintenance-list{
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+    section.quality-problem .maintenance-list li{
+        width: calc(100% / 3 - 0.8rem);
+        padding: 2.4rem 1.2rem;
+        box-sizing: border-box;
+    }
+    section.quality-problem .maintenance-list li i{
+        width: 60%;
+        margin-bottom: 2.4rem;
+    }
+    section.quality-problem .maintenance-list span{
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    section.service-problem .inner{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    section.service-problem .right-box{
+        width: 100%;
+    }
+    section.service-problem .right-box ul{
+        padding: 0;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    section.service-problem .right-box ul li {
+        width: calc(100% / 5 - 2.4rem);
+    }
+    section.service-problem .right-box ul li i{
+        margin-bottom: 1.6rem;
+    }
+    section.service-problem .right-box ul li p{
+        font-size: 1.5rem;
+    }
+
+    section.news-wrapper .title-area{
+        padding: 0 3rem;
+    }
+    .news-swiper-wrap{
+        padding-left: 3rem;;
+    }
+    section.news-wrapper, section.youtube-wrapper{
+        padding: 12rem 0 4rem;
+    }
+    .news-wrapper .swiper-slide a .label{
+        font-size: 1.2rem;
+    }
+    .news-wrapper .swiper-slide a h5{
+        font-size: 1.8rem;
+    }
+    .news-wrapper .swiper-slide a p{
+        font-size: 1.4rem;
+        height: 9rem;
+    }
+    .news-swiper-wrap .swiper-slide a{
+        min-height: 16rem;
+    }
+
+    section.youtube-wrapper .title-area i{
+        width: 4rem;
+    }
+
+    section.service-wrapper .inner .title-area{
+        margin-bottom: 4rem;
+    }
+    section.service-wrapper .inner i{
+        width: 100%;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a{
+        font-size: 2rem;
+        padding: 1.4rem 8rem;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a i {
+        width: 2.4rem;
+    }
+
+    .banner2-wrapper{
+        padding: 6rem 0;
+    }
+    .banner2-wrapper .inner{
+        gap: 2.4rem;
+    }
+    .banner2-wrapper .inner i.acc{
+        width: 2.4rem;
+    }
+    .banner2-wrapper .inner p{
+        font-size: 1.8rem;
+        word-break: keep-all;
+        width: 94%;
+    }
+    .banner2-wrapper .inner p span::after{
+        height: 1rem;
+    }
+
+    section.review-wrapper .inner .title-area{
+        margin-bottom: 4rem;
+    }
+    section.review-wrapper ul li{
+        gap: 2rem;
+    }
+    section.review-wrapper ul li i{
+        width: 8rem;
+    }
+    section.review-wrapper ul li .review-box{
+        width: calc(100% - 10rem);
+        padding: 4rem 2rem;
+    }
+    section.review-wrapper ul li .review-box .profile{
+        gap: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+    section.review-wrapper ul li .review-box p .star{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    section.review-wrapper ul li .review-box p .star + span{
+        font-size: 1.2rem;
+    }
+    section.review-wrapper ul li .review-box .profile p:last-child span{
+        font-size: 1.2rem;
+    }
+    section.review-wrapper ul li .review-box p:last-child span:nth-child(n+2)::before{
+        height: 1rem;
+    }
+    section.review-wrapper ul li .review-box > p:last-child{
+        font-size: 1.2rem;
+        word-break: keep-all;
+    }
+    section.review-wrapper ul li .review-box > p:last-child br {
+        display: none;
+    }
+
+    section.proposal-wrapper .proposal-list{
+        width: 100%;
+    }
+    section.proposal-wrapper .inner{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    section.proposal-wrapper .title-area{
+        position: relative;
+        top: 0;
+    }
+    section.proposal-wrapper .title-area .contact-btn{
+        position: absolute;
+        margin-top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    section.proposal-wrapper .title-area .contact-btn a {
+        padding: 1rem 4.2rem;
+        font-size: 1.6rem;
+    }
+    section.proposal-wrapper .title-area .contact-btn a i {
+        width: 2.2rem;
+    }
+    section.proposal-wrapper .proposal-list ul{
+        gap: 9rem;
+    }
+    section.proposal-wrapper .proposal-list ul i{
+        margin-bottom: 3rem;
+    }
+    section.proposal-wrapper .proposal-list ul .label{
+        font-size: 1.4rem;
+        padding: 0.4rem 2rem;
+    }
+    section.proposal-wrapper .proposal-list ul .text-box p{
+        font-size: 1.5rem;
+        word-break: keep-all;
+    }
+
+    section.client-wrapper .title-area{
+        margin-bottom: 4rem;
+    }
+    section.client-wrapper i.clients-pc{
+        display: none;
+    }
+    section.client-wrapper i.mo{
+        display: block;
+    }
+
+    footer .f-logo{
+        width: 8rem;
+    }
+    footer .f-info ul li{
+        flex-wrap: wrap;
+        gap: 0.6rem 4rem;
+    }
+    footer .f-info ul li p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+	
+	section.chart-wrapper .inner .box i img {
+		height: auto;
+	}
+	
+    section.quality-problem, section.service-problem, section.service-wrapper, section.review-wrapper, section.proposal-wrapper, section.client-wrapper{padding: 9rem 0;}
+    .inner{
+        padding: 0 2.4rem;
+    }
+    .wrapper {
+        overflow: hidden;
+        padding-top: 9.6rem;
+    }
+
+
+    .title-area h2{
+        font-size: 2.2rem;
+        word-break: keep-all;
+    }
+    .title-area p{
+        font-size: 1.4rem;
+        word-break: keep-all;
+    }
+
+
+    header.fixed {
+        top: -5.2rem;
+    }
+    header .header-inner {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    header .header-logo a{
+        width: 12rem;
+        padding: 0.8rem 0;
+    }
+    header nav{
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: initial;
+        padding: 0.6em 0;
+        width: 100%;
+        border-top: 1px solid #cbcbcb;
+        right: inherit;
+    }
+    header nav ul{
+        justify-content: center;
+        gap: 2.4rem;
+    }
+    header nav ul li a{
+        font-size: 1.5rem;
+    }
+
+
+    /* main */
+    /* hero */
+    section.hero{
+        padding: 5rem 0 3rem;
+    }
+    section.hero p{
+        font-size: 1.6rem;
+        word-break: keep-all;
+    }
+    section.hero p:nth-of-type(2){
+        margin-top: 3rem
+    }
+    
+    .imb-banner img.pc{display: none;}
+    .imb-banner img.mo{display: block;}
+
+    section.text.flex{
+        padding: 4rem 0 9rem;
+    }
+    section.text.flex h2{
+        font-size: 2rem;
+    }
+    section.text.flex p{
+        font-size: 1.4rem;
+        word-break: keep-all;
+        text-align: left;
+    }
+
+    section.recycle-effect{
+        padding: 4rem 0 9rem;
+    }
+
+    section.recycle-effect .bottom-box-wrapper{
+        flex-direction: column;
+        gap: 6rem;
+    }
+    section.recycle-effect .bottom-box-wrapper > div{
+        width: 100%;
+    }
+
+    section.recycle-effect .box .inner-item{
+        padding: 3rem 0;
+    }
+    section.recycle-effect .box .inner-item i{
+        width: 8.2rem;
+    }
+    section.recycle-effect .box .inner-item span{
+        font-size: 1.5rem;
+    }
+    section.recycle-effect .box .inner-item strong{
+        font-size: 3.2rem;
+    }
+    section.recycle-effect .box .inner-item strong em{
+        font-size: 1.4rem;
+        display: inline-block
+    }
+    section.recycle-effect .box .inner-item + p{
+        font-size: 1.4rem;
+    }
+
+    section.history.flex{
+        padding: 4rem 0 9rem;
+    }
+    section.history.flex .right-history-list > ul > li{
+        padding: 2.4rem 0.6rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    section.history.flex .right-history-list ul > li ul li{
+        gap: 1rem;
+    }
+    section.history.flex .right-history-list ul > li ul li:nth-child(n+2){
+        margin-top: 1.2rem;
+    }
+    section.history.flex .right-history-list ul > li strong{
+        width: 100%;
+    }
+    section.history.flex .right-history-list ul > li ul li p{
+        width: calc(100% - 3.3rem);
+    }
+
+    section.solution-banner.flex{
+        padding: 6rem 0;
+    }
+    section.solution-banner .left-box .title h3{
+        font-size: 2.6rem;
+        word-break: keep-all;
+    }
+    section.solution-banner .left-box .title p{
+        font-size: 1.4rem;
+    }
+    section.solution-banner .left-box ul{
+        gap: 3rem;
+    }
+    section.solution-banner .left-box ul li{
+        gap: 1.2rem;
+    }
+    section.solution-banner .right-img{
+        width: 90%;
+        margin-top: -3rem;
+    }
+
+    section.chart-wrapper{
+        padding: 9rem 0;
+    }
+    section.chart-wrapper .inner .box{
+        gap: 2rem;
+    }
+    section.chart-wrapper .inner .box .text-box strong{
+        font-size: 1.8rem;
+    }
+    section.chart-wrapper .inner .box .text-box p{
+        font-size: 1.4rem;
+    }
+    section.chart-wrapper .inner .box i{
+        width: 100%;
+    }
+	
+	section.chart-wrapper .inner .box i img {
+		height: auto;
+	}
+
+    .banner-wrapper{
+        padding: 6rem 0;
+    }
+    .banner-wrapper h3{
+        font-size: 2rem;
+    }
+
+    section.quality-problem .table-box table{
+        margin-bottom: 3rem;
+    }
+    section.quality-problem .table-box table tr th{
+        font-size: 1.4rem;
+        width: 10rem;
+    }
+    section.quality-problem .table-box table tr td{
+        font-size: 1.4rem;
+        word-break: keep-all;
+    }
+    section.quality-problem .table-box .img-list li i{
+        height: 8rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(1) img{
+        width: 4.2rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(2) img{
+        width: 3.2rem;
+    }
+    section.quality-problem .table-box .img-list li:nth-child(3) img{
+        width: 3rem;
+    }
+    section.quality-problem .table-box .img-list li span{
+        font-size: 1.4rem;
+        word-break: keep-all;
+        line-height: 1.2;
+    }
+    section.quality-problem .table-box.table2{
+        margin-top: 6rem;
+    }
+    section.quality-problem .maintenance-list{
+        flex-direction: column;
+    }
+    section.quality-problem .maintenance-list li{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5%;
+        padding: 2.4rem 2rem;
+    }
+    section.quality-problem .maintenance-list li i{
+        margin-bottom: 0;
+        width: 25%;
+    }
+    section.quality-problem .maintenance-list li .text-area{
+        width: 70%;
+        text-align: left;
+    }
+    section.quality-problem .maintenance-list span{
+        font-size: 1.6rem;
+    }
+    
+    section.service-problem, section.service-wrapper {
+        padding-top: 4rem;
+    }
+    section.service-problem .right-box ul{
+        gap: 4rem 2rem;
+    }
+    section.service-problem .right-box ul li{
+        width: calc(100% / 3 - 1.3333rem);
+    }
+
+    section.news-wrapper, section.youtube-wrapper{
+        padding: 9rem 0 4rem;
+    }
+    section.news-wrapper .title-area{
+        padding: 0 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+    .news-swiper-wrap{
+        padding-left: 2.4rem;
+    }
+    section.youtube-wrapper .title-area{
+        margin-bottom: 2.4rem;
+    }
+    section.youtube-wrapper .title-area i{
+        width: 3.2rem;
+    }
+
+    section.service-wrapper .inner i.pc{
+        display: none;
+    }
+    section.service-wrapper .inner i.mo{
+        display: block;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg{
+        margin-top: 4rem;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a{
+        font-size: 1.6rem;
+        padding: 1rem 6.2rem;
+    }
+    section.service-wrapper .inner .contact-btn.green-bg a i {
+        width: 2.4rem;
+    }
+
+    .banner2-wrapper .inner p{
+        width: 100%;
+    }
+    section.review-wrapper ul li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section.review-wrapper ul li:nth-child(2n){
+        align-items: flex-end;
+    }
+    section.review-wrapper ul li i{
+        order: 2;
+        width: 12rem;
+    }
+    section.review-wrapper ul li .review-box{
+        order: 1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section.proposal-wrapper .title-area .contact-btn{
+        position: relative;
+        margin-top: 2rem;
+    }
+    section.proposal-wrapper .title-area .contact-btn a {
+        padding: 0.8rem 4.2rem;
+        font-size: 1.4rem;
+    }
+    section.proposal-wrapper .title-area .contact-btn a i {
+        width: 2rem;
+    }
+    section.proposal-wrapper .proposal-list ul i{
+        margin-bottom: 2rem;
+    }
+    section.proposal-wrapper .proposal-list ul .text-box p{
+        font-size: 1.4rem;
+    }
+    section.proposal-wrapper .proposal-list ul .text-box p br {
+        display: none;
+    }
+
+    section.client-wrapper {
+        padding: 6rem 0;
+    }
+
+}
